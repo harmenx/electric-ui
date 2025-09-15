@@ -1,4 +1,5 @@
-import { Button } from '~/components/ui/button';
+import { Button as ShadcnButton } from '~/components/ui/button';
+import { Button as CustomButton } from '~/components/custom/Button';
 import { Input } from '~/components/ui/input';
 import {
   Card,
@@ -15,14 +16,22 @@ function App() {
       <h1 className="text-2xl font-bold mb-4">shadcn Components</h1>
 
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Button</h2>
+        <h2 className="text-xl font-semibold mb-2">shadcn Button</h2>
         <div className="flex space-x-4">
-          <Button>Default</Button>
-          <Button variant="destructive">Destructive</Button>
-          <Button variant="outline">Outline</Button>
-          <Button variant="secondary">Secondary</Button>
-          <Button variant="ghost">Ghost</Button>
-          <Button variant="link">Link</Button>
+          <ShadcnButton>Default</ShadcnButton>
+          <ShadcnButton variant="destructive">Destructive</ShadcnButton>
+          <ShadcnButton variant="outline">Outline</ShadcnButton>
+          <ShadcnButton variant="secondary">Secondary</ShadcnButton>
+          <ShadcnButton variant="ghost">Ghost</ShadcnButton>
+          <ShadcnButton variant="link">Link</ShadcnButton>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">Custom Button</h2>
+        <div className="flex space-x-4">
+          <CustomButton>Default</CustomButton>
+          <CustomButton variant="brand">Brand</CustomButton>
         </div>
       </section>
 
