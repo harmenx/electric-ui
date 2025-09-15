@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders headline', () => {
   render(<App />);
-  const headline = screen.getByText(/Vite \+ React/i);
+  const headline = screen.getByText(/shadcn Button/i);
   expect(headline).toBeInTheDocument();
 });
